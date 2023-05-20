@@ -4,7 +4,8 @@ public class Course {
     String name;
     String code;
     String prefix;
-    int note;
+    int note=0;
+    int noteV=0;
 
     Course(String name , String code , String prefix ){
         this.name =name;
@@ -18,7 +19,7 @@ public class Course {
 
         if (teacher.branch.equals(this.prefix)){
             this.teacher = teacher;
-            printTeacher();
+
         }else{
             System.out.println("Öğretmen ve ders bölümleri uyuşmuyor!");
         }
